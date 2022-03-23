@@ -3,9 +3,8 @@
 // }
 void call(List<String> processes) {
     List<String> cmds = []
-    processes.each(processes.each { process ->
+    processes.each { process ->
             cmds.add("tasklist | find /i \"${process}\" && taskkill /im ${process} /F")
-        }
-    )
-    echo "$cmd"
+    }
+    echo "$cmds"
 }
