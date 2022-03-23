@@ -8,6 +8,7 @@ void call(def task, Map settings) {
 //           echo "${settings.Region.asia}"
 //           echo "${task.check()}"
             helloWorld(['CANoe64.exe', 'SupportAssistant.exe'])
+            cleanWs()
         }
       }
     }
