@@ -10,6 +10,6 @@
 //     echo "$cmds"
 // }
 void call(String input) {
-    node = path.join([var/lib/jenkins/, "${input}.json"])
+    node = path.join(["var/lib/jenkins/", input])
     echo "${node}"
 }
