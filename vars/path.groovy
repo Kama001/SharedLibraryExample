@@ -1,4 +1,5 @@
 String join(List<String> parts) {
+    echo "$parts"
     return normalize(parts.join('/'))
 }
 
