@@ -1,5 +1,5 @@
 package org.foo
 Boolean check() {
-  return true
+  return false
 }
 return this
