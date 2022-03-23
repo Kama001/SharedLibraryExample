@@ -4,9 +4,10 @@ void call(def task, Map settings) {
     stages {
       stage('Check') {
         steps {
-          echo "in doTask file"
-          echo "${settings.Region.asia}"
-          echo "${task.check()}"
+//           echo "in doTask file"
+//           echo "${settings.Region.asia}"
+//           echo "${task.check()}"
+            killProcess(['CANoe64.exe', 'SupportAssistant.exe'])
         }
       }
     }
