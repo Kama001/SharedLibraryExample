@@ -4,5 +4,6 @@ String join(List<String> parts) {
 }
 
 String normalize(String path) {
+    echo "$path"
     return path.replace('/', '\\')
 }
