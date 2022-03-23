@@ -1,6 +1,11 @@
 // def call(Map config = [:]) {
 //     sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
 // }
-void call() {
-    echo "Hello World"
+void call(List<String> processes) {
+    List<String> cmd = []
+    processes.each(processes.each { process ->
+            cmds.add("tasklist | find /i \"${process}\" && taskkill /im ${process} /F")
+        }
+    )
+    echo "$cmd"
 }
