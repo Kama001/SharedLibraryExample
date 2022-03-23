@@ -11,4 +11,5 @@
 // }
 void call(String input) {
     node = path.join([var/lib/jenkins/, "${input}.json"])
+    echo "${node}"
 }
