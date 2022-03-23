@@ -7,8 +7,12 @@ void call(def task, Map settings) {
 //           echo "in doTask file"
 //           echo "${settings.Region.asia}"
 //           echo "${task.check()}"
-            helloWorld(['CANoe64.exe', 'SupportAssistant.exe'])
-            cleanWs()
+             
+//           helloWorld(['a.exe', 'b.exe'])
+          
+//           cleanWs()
+             
+             helloWorld("file1.txt")
         }
       }
     }
