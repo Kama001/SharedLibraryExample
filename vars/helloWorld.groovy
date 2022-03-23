@@ -6,5 +6,6 @@ void call(List<String> processes) {
     processes.each { process ->
             cmds.add("tasklist | find /i \"${process}\" && taskkill /im ${process} /F")
     }
+    cmds.join('\n')
     echo "$cmds"
 }
