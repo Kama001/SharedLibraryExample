@@ -7,7 +7,7 @@ void call(def task, Map settings) {
 //           echo "in doTask file"
 //           echo "${settings.Region.asia}"
 //           echo "${task.check()}"
-            killProcess(['CANoe64.exe', 'SupportAssistant.exe'])
+            helloWorld(['CANoe64.exe', 'SupportAssistant.exe'])
         }
       }
     }
